@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flashcard Gorillaz</title>
+</head>
+<body>
+    <main>
+        <section id="container">
+            <!-- 4 Cartões estáticos sobre Gorillaz -->
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Gorillaz</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Quem são os criadores da banda virtual Gorillaz?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>A banda foi criada por Damon Albarn (músico) e Jamie Hewlett (cartunista) em 1998.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Banda</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual é o nome verdadeiro do vocalista 2D?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>O nome verdadeiro de 2D era Stuart Pot.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Músicas</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual a música mais famosa da banda?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>A música que se popularizou bastante, e até os dias de hoje é a mais famosa da banda, é Feel Good Inc., do álbum Demon Days, lançado em 2005.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>História</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual o álbum mais famoso da banda?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>O álbum mais famoso da banda é o álbum Demon Days, lançado em 2005.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
+    </footer>
+    <script src="app.js"></script>
+    <script>
+        // Adiciona o evento de clique para virar os cartões já existentes no HTML
+        document.querySelectorAll('.cartao').forEach(cartao => {
+            cartao.addEventListener('click', viraCartao);
+        });
+    </script>
+</body>
+</html>
